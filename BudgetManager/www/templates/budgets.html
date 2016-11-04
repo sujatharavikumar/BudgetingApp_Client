@@ -1,0 +1,13 @@
+<ion-view view-title="Budget Categories">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="budget in budgets" href="#/app/budgets/{{budget.title}}">
+        <div class="budget_category">
+          {{budget.title}} :
+          ${{value[budget.id + 'BudgetSpent']}} / ${{value[budget.id]}}
+          <progress value="{{value[budget.id + 'BudgetSpent']}}" max="{{value[budget.id]}}"></progress>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

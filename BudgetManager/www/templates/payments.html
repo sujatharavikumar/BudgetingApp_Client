@@ -1,0 +1,34 @@
+<ion-view view-title="Payments">
+  <ion-content>
+
+    <div class="list list-inset center">
+      <ion-label>Bill</ion-label>
+            <label class="item item-input item-select payments">
+              <select id="billType">
+                  <option ng-repeat = "bill in bills">{{bill}}</option>
+              </select>
+            </label>
+            <label class="item item-input payform">
+              <input id = "billAmount" type="number" placeholder="$$">
+            </label>
+            <button class="button button-large" ng-click="submitPayment('billAmount', 'billType')">
+              Submit
+            </button>
+      </div>
+
+      <div class="list list-inset center">
+        <ion-label>Purchases</ion-label>
+              <label class="item item-input item-select payments">
+                  <select id="purchaseType">
+                      <option ng-repeat = "purchase in purchases">{{purchase}}</option>
+                  </select>
+              </label>
+              <label class="item item-input payform">
+                <input id="purchaseAmount" type="number" placeholder="$$">
+              </label>
+              <button class="button button-large" ng-click="submitPayment('purchaseAmount', 'purchaseType')">
+                Submit
+              </button>
+      </div>
+  </ion-content>
+</ion-view>

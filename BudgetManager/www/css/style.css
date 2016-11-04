@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+.payments {
+  width: 16em;
+  height: 3em;
+  display: inline-block;
+}
+
+.payform {
+  height: 3em;
+  width: 20em;
+  display: inline-block;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center button {
+  text-align: justify;
+  margin-left: 15px;
+}
+
+progress {
+  -webkit-appearance: none;
+}

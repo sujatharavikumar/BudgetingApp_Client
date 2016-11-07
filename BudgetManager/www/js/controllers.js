@@ -129,12 +129,12 @@ angular.module('starter.controllers', [])
   $scope.updateBudget = function (id) {
 
     var type = id.toLowerCase();
-    console.log(type);
+    //console.log(type);
     var newBudget = document.getElementById('newBudget');
-    console.log(newBudget.value);
+    //console.log(newBudget.value);
 
     var payment = {
-      id: login.getUsername(),
+      username: login.getUsername(),
       amount: newBudget.value
     }
 
